@@ -36,7 +36,7 @@ public class TCAS {
     private String department;
     
     @NotNull
-    private boolean confirm;
+    private boolean status;
 
     public TCAS(){
     
@@ -89,12 +89,12 @@ public class TCAS {
         this.department = department;
     }
 
-    public boolean isConfirm() {
-        return confirm;
+    public boolean isStatus() {
+        return status;
     }
 
-    public void setConfirm(boolean confirm) {
-        this.confirm = confirm;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     
