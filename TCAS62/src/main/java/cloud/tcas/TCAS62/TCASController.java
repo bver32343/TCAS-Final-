@@ -5,10 +5,13 @@
  */
 package cloud.tcas.TCAS62;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  *
  * @author Student
  */
+@RestController
 public class TCASController {
     @Autowired
     TCASService tcasService;
@@ -33,4 +36,9 @@ public class TCASController {
             throw new NotFoundException("Not Found user. incorrect username or password.");
         }
     }
+    
+    @PostMapping("/confirm/department/{status}")
+//    public ResponseEntity<TCAS> confirm(@RequestBody){
+//    }
+    //เขียนไม่ทันแล้วครับ
 }
